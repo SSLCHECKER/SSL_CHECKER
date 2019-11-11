@@ -1,4 +1,4 @@
-# SSL_CHECKER
+# SSL CHECKER
 
 SSL CHECKER is a bash script that was created to assist identifying whether a certain domain is malicious or benign based on analysis of SSL certificate’s metadata with other checks. The script performs analysis on a single given domain or list of domains in a file. It performs the following checks:
 
