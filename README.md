@@ -19,7 +19,7 @@ The script performs the following checks:
 Our study showed that relying on analysis of SSL certificate’s metadata with the absence of other data sources in real network traffic such as DNS and other logs, could introduce false positives. Therefore, checking the domain via the open source tool VirusTotal was added to enhance the validation and checking process. The tool is called “VirusTotal CLI”, which is an open source tool that can retrieve information about a file, URL, domain name, IP address, etc from the main source VirusTotal. The tool can be found at https://github.com/VirusTotal/vt-cli page with installation steps. The tool has different releases for different platforms, which are available at https://github.com/VirusTotal/vt-cli/releases. 
 
 
-- If the domain is malicious, the certificate’s fingerprint (SHA1) will be added to a lookup file called “sha1_sslbl_unique.txt” for future checks. 
+- If the domain is malicious, the certificate’s fingerprint (SHA1) will be added to a lookup file called “sha1_sslbl_unique.txt” for future checks. The file contains the malicious domain, certificate’s fingerprint (SHA1) and the name of certificate’s issuer.
 
 - We use a file of whitelisted domains that has top 45 most popular sites based on Alexa.com. This file can be updated to whitelist domains.
 
@@ -48,3 +48,4 @@ Our study showed that relying on analysis of SSL certificate’s metadata with t
 	`./sslChecker.sh [domain] -s`
 	
 	
+Note: Scan results might take few long seconds to appear. We are working to enhance the script for better and fast results  
