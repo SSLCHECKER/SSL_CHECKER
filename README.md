@@ -26,8 +26,14 @@ Our study showed that relying on analysis of SSL certificate’s metadata with t
 ## Usage
 
 - To use the script, first changing the permission is a must for execution:
+
 	`- Chmod 755 sslChecker.sh`
+	
 - To run the script:
+
 	`- ./sslChecker.sh [domain or a file with list of domains]`
+	
 - For more information on how to use the script, a help function is provided:
+
 	`- ./sslChecker.sh -h`
+	
