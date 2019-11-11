@@ -23,17 +23,28 @@ Our study showed that relying on analysis of SSL certificate’s metadata with t
 
 - We use a file of whitelisted domains that has top 45 most popular sites based on Alexa.com. This file can be updated to whitelist domains.
 
+
 ## Usage
 
 - To use the script, first changing the permission is a must for execution:
 
-	`- Chmod 755 sslChecker.sh`
+	`chmod 755 sslChecker.sh`
 	
 - To run the script:
 
-	`- ./sslChecker.sh [domain or a file with list of domains]`
+	`./sslChecker.sh [domain or a file with list of domains]`
 	
 - For more information on how to use the script, a help function is provided:
 
-	`- ./sslChecker.sh -h`
+	`./sslChecker.sh -h`
+	
+- To show list of domains sharing the same certificate. This can help in spotting other malicious domains sharing the same certificate:
+
+	`./sslChecker.sh [domain] -l`
+
+
+- The script shows list of Cipher suits supported by the checked server. A built-in tool in Kali Linux dubbed “sslscan” was used to view list of SSL versions and cipher suites. 
+
+	`./sslChecker.sh [domain] -s`
+	
 	
