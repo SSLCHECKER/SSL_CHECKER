@@ -48,4 +48,4 @@ Our study showed that relying on analysis of SSL certificate’s metadata with t
 	`./sslChecker.sh [domain] -s`
 	
 	
-Note: Scan results might take few long seconds to appear. We are working to enhance the script for better and fast results  
+**Note**: Scan results might take few long seconds to appear. We are working to enhance the script for better and fast results  
