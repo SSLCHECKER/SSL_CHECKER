@@ -26,7 +26,7 @@ Our study showed that relying on analysis of SSL certificate’s metadata with t
 
 ## Cronjob
 
-	`*/5 * * * * ~/sslbl.sh`
+	*/5 * * * * ~/sslbl.sh
 	
 
 - We use a file of whitelisted domains that has top 45 most popular sites based on Alexa.com. This file can be updated to whitelist domains.
