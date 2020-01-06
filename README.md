@@ -1,5 +1,26 @@
 # SSL CHECKER
 
+`
+/ ___/ ___|| |      / ___| | | | ____/ ___| |/ / ____|  _ \ 
+\___ \___ \| |     | |   | |_| |  _|| |   | ' /|  _| | |_) |
+ ___) |__) | |___  | |___|  _  | |__| |___| . \| |___|  _ < 
+|____/____/|_____|  \____|_| |_|_____\____|_|\_\_____|_| \_\ 
+
+ Check SSL certificates to identify anomolies within certificates metadata
+
+./sslCheck.sh -h for help
+
+Usage: ./sslCheck4.sh [domain, without http/https] or [file]
+Flags:
+
+	-h  --help
+
+	-l  --list domains sharing the same certificate of the checked domain. Usage: ./sslCheck4.sh domain -l
+
+	-s  --list supported suite ciphers. Usage: ./sslCheck4.sh domain -s
+
+`
+
 SSL CHECKER is a bash script that was created to assist identifying anomalies within certificates metadata, which would help spotting a malicious activity linked to a certain domain. The script performs analysis on a single given domain or list of domains stored in a file. It performs the following checks:
 
 - Analysis of the domain’s SSL certificate metadata
