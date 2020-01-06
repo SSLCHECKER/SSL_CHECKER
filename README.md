@@ -49,7 +49,9 @@ To use VirusTotal, I used the project “VirusTotal CLI”, which is an open sou
 
 ## Cron job
 
-	*/5 * * * * ~/sslbl.sh
+	*/5 * * * * ~/[PATH]/SSL_CHECKER/sslbl.sh
+	
+	PATH:where you downloaded the project SSL_CHECKER
 	
 
 ## Usage
@@ -76,4 +78,4 @@ To use VirusTotal, I used the project “VirusTotal CLI”, which is an open sou
 	`./sslChecker.sh [domain] -s`
 	
 	
-**Note**: Scan results might take few long seconds to appear. I'm working to enhance the script for better and fast results  
+**Note**: The scaning results might take few long seconds to appear. I'm working to enhance the script for better and fast results  
