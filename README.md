@@ -44,6 +44,8 @@ To use VirusTotal, I used the project “VirusTotal CLI”, which is an open sou
 
 - If the domain is malicious, and the script spotted anomalies within the certificate’s metadata, the certificate’s fingerprint (SHA1) will be added to a lookup file called “sha1_anomoly_unique.txt” for future checks. The file contains the domain, certificate’s fingerprint (SHA1) and the name of certificate’s issuer.
 
+- If the checked domain redirects to a new domain, the script will perform analysis on the new domain SSL certificate if exists.
+
 - The sslbl.sh script downloads csv file of malicious SSL certificates identified by sslbl.abuse.ch database which is updated on the site every 5 minutes. You need to set a cron job for the script to run every 5 minutes as below:
 
 
